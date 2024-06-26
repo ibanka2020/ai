@@ -1,11 +1,6 @@
 name: build Gmeek
 
 on:
-  push:
-    paths:
-      - 'index.html'
-      - 'Gmeek.yml'
-on:
   workflow_dispatch:
   issues:
     types: [opened, edited]
