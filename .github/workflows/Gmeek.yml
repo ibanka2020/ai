@@ -1,16 +1,15 @@
 name: build Gmeek
 
 on:
-  push:
-    paths:
-      - 'index.html'
-
-on:
   workflow_dispatch:
   issues:
     types: [opened, edited]
   schedule:
     - cron: "0 16 * * *"
+  
+  push:
+    paths:
+      - 'index.html'
     
 jobs:
   build:
